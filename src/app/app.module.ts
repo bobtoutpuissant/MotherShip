@@ -8,10 +8,20 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material';
+import { SearchbarComponent } from './searchbar/searchbar.component';
+import { ContentComponent } from './content/content.component';
+import { ListPeopleComponent } from './list-people/list-people.component';
+import { PeopleItemCardComponent } from './people-item-card/people-item-card.component';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchbarComponent,
+    ContentComponent,
+    ListPeopleComponent,
+    PeopleItemCardComponent,
+    MapComponent
   ],
   imports: [
     BrowserModule,
