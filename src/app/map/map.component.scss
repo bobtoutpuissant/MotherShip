@@ -1,0 +1,8 @@
+path:hover,
+circle:hover {
+    transition: all linear 0.1s;
+    stroke-width: 10px;
+    stroke-linejoin: round;
+    fill: #006699 !important;
+    cursor: pointer;
+}
