@@ -7,7 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatInputModule} from '@angular/material';
+import { MatInputModule } from '@angular/material/input';
 import { SearchbarComponent } from './searchbar/searchbar.component';
 import { ContentComponent } from './content/content.component';
 import { ListPeopleComponent } from './list-people/list-people.component';
