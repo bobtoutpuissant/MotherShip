@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeopleItemCardComponent implements OnInit {
 
+  peopleName = 'Olivier'
+  peopleSurname = 'DELALANDE'
+  peopleRoom = 'W214'
+  peopleMail = 'olivier.delalande@telespazio.com'
+
   constructor() { }
 
   ngOnInit(): void {
