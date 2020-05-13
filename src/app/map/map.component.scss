@@ -1,8 +1,15 @@
 path:hover,
-circle:hover {
+rect:hover,
+polygon:hover {
     transition: all linear 0.1s;
     stroke-width: 10px;
     stroke-linejoin: round;
     fill: #006699 !important;
     cursor: pointer;
+}
+
+path,
+rect,
+polygon {
+    fill: #040404;
 }
