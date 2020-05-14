@@ -16,5 +16,4 @@ export class MapComponent implements OnInit {
   //   $("input[name='room']").click();
   //   console.log('que ça marche!')
   // };
-
 }

@@ -17,6 +17,27 @@ polygon {
 path.nohover,
 rect.nohover,
 polygon.nohover {
-    fill: rgba($color: #000000, $alpha: 0.1);
+    fill: rgba($color: #000000, $alpha: 0.0);
     border-style: dashed;
+}
+
+path.nohover:hover,
+rect.nohover:hover,
+polygon.nohover:hover {
+    transition: all linear 0.1s;
+    fill: rgba($color: #8b0000, $alpha: 0.2);
+    border-style: dashed;
+    cursor: no-drop;
+}
+
+#W1:not(.nohover),
+#W2:not(.nohover),
+#W0:not(.nohover) {
+    fill: rgba($color: #02da38, $alpha: 0.5);
+}
+
+.nohover#W1,
+.nohover#W2,
+.nohover#W0 {
+    fill: rgba($color: #bada02, $alpha: 0.5);
 }
