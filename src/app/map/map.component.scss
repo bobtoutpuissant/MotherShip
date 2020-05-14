@@ -1,15 +1,22 @@
-path:hover,
-rect:hover,
-polygon:hover {
+path:hover:not(.nohover),
+rect:hover:not(.nohover),
+polygon:hover:not(.nohover) {
     transition: all linear 0.1s;
     stroke-width: 10px;
     stroke-linejoin: round;
-    fill: #006699 !important;
+    fill: rgba($color: #006699, $alpha: 0.3) !important;
     cursor: pointer;
 }
 
 path,
 rect,
 polygon {
-    fill: #040404;
+    fill: rgba($color: #000000, $alpha: 0.3);
+}
+
+path.nohover,
+rect.nohover,
+polygon.nohover {
+    fill: rgba($color: #000000, $alpha: 0.1);
+    border-style: dashed;
 }
