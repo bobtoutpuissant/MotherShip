@@ -13,6 +13,7 @@ import { ContentComponent } from './content/content.component';
 import { ListPeopleComponent } from './list-people/list-people.component';
 import { PeopleItemCardComponent } from './people-item-card/people-item-card.component';
 import { MapComponent } from './map/map.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { MapComponent } from './map/map.component';
     MatToolbarModule,
     MatFormFieldModule,
     MatInputModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
