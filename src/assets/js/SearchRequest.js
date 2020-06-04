@@ -1,0 +1,3 @@
+// HttpClient.get {
+//     responseType?: 'json',
+// }
