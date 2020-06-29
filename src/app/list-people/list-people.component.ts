@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list-people.component.scss']
 })
 export class ListPeopleComponent implements OnInit {
+  people: any;
+  peopleService: any;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
+    this.people = this.peopleService.fetch()
   }
+
+  ngFor
 
 }

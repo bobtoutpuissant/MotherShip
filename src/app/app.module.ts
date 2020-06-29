@@ -17,7 +17,18 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 import { environment } from '../environments/environment';
+
+const firebaseConfig = {
+  apiKey: 'AIzaSyCzmg_p1g3HMVmN_ngpLAyHlfGoyst_RQ0',
+  authDomain: 'mothership-cbd5f.firebaseapp.com',
+  databaseURL: 'https://mothership-cbd5f.firebaseio.com',
+  projectId: 'mothership-cbd5f',
+  storageBucket: 'mothership-cbd5f.appspot.com',
+  messagingSenderId: '157171008739',
+  appId: '1:157171008739:web:1d4c238696eee57d73b1d6'
+};
 
 @NgModule({
   declarations: [
@@ -37,8 +48,9 @@ import { environment } from '../environments/environment';
     MatFormFieldModule,
     MatInputModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFirestoreModule,
+    AngularFireStorageModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

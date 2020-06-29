@@ -6,5 +6,8 @@
     "ui": {
       "enabled": true
     }
+  },
+  "database": {
+    "rules": "database.rules.json"
   }
 }
