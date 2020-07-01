@@ -1,7 +1,1 @@
-<div class="col-4 sidebar">
-    <div class="sidebar-sticky overflow-auto">
-        <div class="card bg-transparent">
-            <app-people-item-card></app-people-item-card>
-        </div>
-    </div>
-</div>
+<app-people-item-card *ngFor="let person of people" [person]="person"></app-people-item-card>

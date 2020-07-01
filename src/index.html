@@ -13,6 +13,32 @@
 
 <body>
     <app-root></app-root>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.4/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyCzmg_p1g3HMVmN_ngpLAyHlfGoyst_RQ0",
+            authDomain: "mothership-cbd5f.firebaseapp.com",
+            databaseURL: "https://mothership-cbd5f.firebaseio.com",
+            projectId: "mothership-cbd5f",
+            storageBucket: "mothership-cbd5f.appspot.com",
+            messagingSenderId: "157171008739",
+            appId: "1:157171008739:web:1d4c238696eee57d73b1d6"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        var database = firebase.database();
+    </script>
+    <script>
+        function getUserByID() {
+
+        }
+    </script>
 </body>
 
 </html>

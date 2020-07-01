@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Person } from './person.model';
 
 @Component({
   selector: 'app-people-item-card',
@@ -7,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PeopleItemCardComponent implements OnInit {
 
-  peopleName = 'Olivier'
-  peopleSurname = 'DELALANDE'
-  peopleRoom = 'W214'
-  peopleMail = 'olivier.delalande@telespazio.com'
+  @Input() person: Person;
 
   constructor() { }
 
